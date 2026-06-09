@@ -101,12 +101,12 @@ msgid "(selected: {selectedIconKey})"
 msgstr "(선택됨: {selectedIconKey})"
 
 #. js-lingui-id: ZBGbuw
-#: src/pages/settings/security/event-logs/components/EventLogJsonCell.tsx
 #: src/modules/workflow/workflow-steps/components/WorkflowRunStepOutputDetail.tsx
 #: src/modules/workflow/workflow-steps/components/WorkflowRunStepInputDetail.tsx
 #: src/modules/workflow/workflow-run/observability/WorkflowRunStepLogsToolCallRow.tsx
 #: src/modules/workflow/workflow-run/observability/WorkflowRunStepLogsDetail.tsx
 #: src/modules/workflow/workflow-run/observability/WorkflowRunStepLogsDetail.tsx
+#: src/modules/settings/event-logs/components/EventLogJsonCell.tsx
 #: src/modules/settings/admin-panel/health-status/components/SettingsAdminJsonDataIndicatorHealthStatus.tsx
 #: src/modules/settings/admin-panel/health-status/components/SettingsAdminJobDetailsExpandable.tsx
 #: src/modules/settings/admin-panel/health-status/components/SettingsAdminJobDetailsExpandable.tsx
@@ -189,6 +189,13 @@ msgstr ""
 #. placeholder {0}: recordPageLayoutObject.labelPlural
 #: src/modules/layout-customization/components/LayoutCustomizationBar.tsx
 msgid "{0} layout edition"
+msgstr ""
+
+#. js-lingui-id: FGOUAP
+#. placeholder {0}: displayedRecords.length
+#. placeholder {1}: totalCount + liveRecords.length
+#: src/modules/settings/event-logs/components/SettingsLogs.tsx
+msgid "{0} of {1}"
 msgstr ""
 
 #. js-lingui-id: peiknr
@@ -300,11 +307,6 @@ msgstr "{count, plural, other {예: {2}{3}는 소수 {count}개를 위한 예}}"
 #: src/modules/settings/billing/components/internal/ResourceCreditPriceSelector.tsx
 msgid "{credits} Credits - ${priceDisplay}"
 msgstr ""
-
-#. js-lingui-id: jsKQu8
-#: src/modules/object-record/record-show/hooks/useRecordShowPagePagination.ts
-msgid "{currentRank} of {totalCount} in {objectLabelPlural}"
-msgstr "{objectLabelPlural}에서 {totalCount}개 중 {currentRank}"
 
 #. js-lingui-id: 0aO0VO
 #: src/pages/settings/admin-panel/SettingsAdminQueueDetail.tsx
@@ -446,11 +448,6 @@ msgstr "{num, selectordinal, other {{num}번째}}"
 msgid "{numberOfSelectedItems} workspace members"
 msgstr "워크스페이스 구성원 {numberOfSelectedItems}명"
 
-#. js-lingui-id: 7kYa/u
-#: src/modules/object-record/record-show/hooks/useRecordShowPagePagination.ts
-msgid "{objectLabelPlural} ({totalCount})"
-msgstr "{objectLabelPlural} ({totalCount})"
-
 #. js-lingui-id: FaQB54
 #: src/modules/workflow/workflow-steps/workflow-actions/ai-agent-action/hooks/useWorkflowAiAgentPermissionActions.ts
 msgid "{permissionLabel} permission removed"
@@ -465,11 +462,6 @@ msgstr ""
 #: src/modules/object-record/record-merge/components/MergeSettingsTab.tsx
 msgid "{positionLabel} record holds priority"
 msgstr "{positionLabel} 레코드가 우선순위를 가집니다"
-
-#. js-lingui-id: Sxx5Hr
-#: src/pages/settings/security/event-logs/SettingsEventLogs.tsx
-msgid "{recordCount} of {totalCount} records"
-msgstr "{totalCount}개 레코드 중 {recordCount}개"
 
 #. js-lingui-id: 5d0hY6
 #: src/modules/settings/admin-panel/health-status/hooks/useRetryJobs.ts
@@ -839,11 +831,6 @@ msgstr "액세스 키 ID"
 #. js-lingui-id: CrjDqe
 #: src/pages/auth/Authorize.tsx
 msgid "Access your workspace data"
-msgstr ""
-
-#. js-lingui-id: c2UA7k
-#: src/pages/settings/ai/components/SettingsAiMCP.tsx
-msgid "Access your workspace data from your favorite MCP client like Claude Desktop, Windsurf or Cursor."
 msgstr ""
 
 #. js-lingui-id: AeXO77
@@ -1735,7 +1722,7 @@ msgid "All lines"
 msgstr "모든 줄"
 
 #. js-lingui-id: c3lkKf
-#: src/pages/settings/security/event-logs/components/EventLogFilters.tsx
+#: src/modules/settings/event-logs/components/EventLogFilters.tsx
 msgid "All Members"
 msgstr "모든 구성원"
 
@@ -1750,8 +1737,8 @@ msgid "All objects"
 msgstr ""
 
 #. js-lingui-id: aFE/OW
-#: src/pages/settings/security/event-logs/components/EventLogFilters.tsx
 #: src/modules/settings/roles/role-permissions/objects-permissions/components/SettingsRolePermissionsObjectsTableHeader.tsx
+#: src/modules/settings/event-logs/components/EventLogFilters.tsx
 #: src/modules/settings/developers/components/WebhookEntitySelect.tsx
 #: src/modules/settings/developers/components/WebhookEntitySelect.tsx
 msgid "All Objects"
@@ -1916,6 +1903,11 @@ msgstr "오류가 발생했습니다"
 msgid "An error occurred while checking user existence"
 msgstr "사용자 존재 여부 확인 중 오류가 발생했습니다"
 
+#. js-lingui-id: LfKkm6
+#: src/modules/page-layout/widgets/components/PageLayoutWidgetErrorDisplay.tsx
+msgid "An error occurred while loading this widget."
+msgstr ""
+
 #. js-lingui-id: I/scZd
 #: src/modules/ai/components/AiChatErrorMessage.tsx
 msgid "An error occurred while processing your message"
@@ -1984,11 +1976,6 @@ msgstr "내부 오류가 발생하여 변경 사항을 검증할 수 없습니�
 msgid "An object with this name already exists"
 msgstr "이 이름을 가진 객체가 이미 존재합니다"
 
-#. js-lingui-id: byKna+
-#: src/pages/settings/security/event-logs/SettingsEventLogs.tsx
-msgid "An unexpected error occurred. Please try again."
-msgstr "예기치 않은 오류가 발생했습니다. 다시 시도해 주세요."
-
 #. js-lingui-id: HZFm5R
 #: src/utils/date-utils.ts
 #: src/modules/settings/roles/role-settings/components/SettingsRoleSettingsDeleteRoleConfirmationModalSubtitle.tsx
@@ -2042,7 +2029,6 @@ msgstr "API 및 웹훅"
 #. js-lingui-id: yRnk5W
 #: src/pages/settings/developers/api-keys/SettingsDevelopersApiKeyDetail.tsx
 #: src/pages/settings/developers/api-keys/SettingsDevelopersApiKeyDetail.tsx
-#: src/pages/settings/ai/components/SettingsAiMCP.tsx
 #: src/pages/settings/admin-panel/SettingsAdminNewAiProvider.tsx
 #: src/pages/settings/admin-panel/SettingsAdminAiProviderDetail.tsx
 #: src/pages/settings/admin-panel/SettingsAdminAiProviderDetail.tsx
@@ -2185,12 +2171,12 @@ msgid "Application installed successfully."
 msgstr "응용 프로그램이 성공적으로 설치되었습니다."
 
 #. js-lingui-id: LllWIc
-#: src/pages/settings/security/event-logs/components/EventLogTableSelector.tsx
+#: src/modules/settings/event-logs/components/EventLogTableSelector.tsx
 msgid "Application Logs"
 msgstr ""
 
 #. js-lingui-id: l/T809
-#: src/pages/settings/applications/components/SettingsApplicationDetailTitle.tsx
+#: src/pages/settings/applications/SettingsAvailableApplicationDetails.tsx
 msgid "Application not listed on the marketplace. It was shared via a direct link"
 msgstr ""
 
@@ -2544,20 +2530,10 @@ msgid "Audit logs"
 msgstr "감사 로그"
 
 #. js-lingui-id: EPEFrH
-#: src/pages/settings/security/event-logs/SettingsEventLogs.tsx
+#: src/modules/settings/security/components/SettingsSecuritySettings.tsx
 #: src/modules/settings/security/components/SettingsSecuritySettings.tsx
 msgid "Audit Logs"
 msgstr "감사 로그"
-
-#. js-lingui-id: X0+U3u
-#: src/pages/settings/security/event-logs/SettingsEventLogs.tsx
-msgid "Audit logs are available with an Enterprise subscription. Please upgrade to access this feature."
-msgstr "감사 로그는 Enterprise 구독에서만 사용할 수 있습니다. 이 기능을 사용하려면 업그레이드해 주세요."
-
-#. js-lingui-id: rNQ4RB
-#: src/pages/settings/security/event-logs/SettingsEventLogs.tsx
-msgid "Audit logs require ClickHouse to be configured. Please contact your administrator to set up ClickHouse."
-msgstr "감사 로그를 사용하려면 ClickHouse 구성이 필요합니다. ClickHouse 설정을 위해 관리자에게 문의해 주세요."
 
 #. js-lingui-id: kIuOL4
 #: src/modules/workflow/workflow-trigger/components/WorkflowEditTriggerWebhookForm.tsx
@@ -3507,7 +3483,6 @@ msgid "ClickHouse is required for audit logs. Contact your administrator."
 msgstr "감사 로그에는 ClickHouse가 필요합니다. 관리자에게 문의하세요."
 
 #. js-lingui-id: CTdw8/
-#: src/pages/settings/security/event-logs/SettingsEventLogs.tsx
 #: src/pages/settings/ai/components/SettingsAiUsageTab.tsx
 #: src/modules/settings/usage/components/SettingsUsageAnalyticsSection.tsx
 msgid "ClickHouse Not Configured"
@@ -3588,12 +3563,12 @@ msgid "Code your function"
 msgstr "함수 코딩하기"
 
 #. js-lingui-id: H86f9p
-#: src/pages/settings/security/event-logs/components/EventLogJsonCell.tsx
 #: src/modules/workflow/workflow-steps/components/WorkflowRunStepOutputDetail.tsx
 #: src/modules/workflow/workflow-steps/components/WorkflowRunStepInputDetail.tsx
 #: src/modules/workflow/workflow-run/observability/WorkflowRunStepLogsToolCallRow.tsx
 #: src/modules/workflow/workflow-run/observability/WorkflowRunStepLogsDetail.tsx
 #: src/modules/workflow/workflow-run/observability/WorkflowRunStepLogsDetail.tsx
+#: src/modules/settings/event-logs/components/EventLogJsonCell.tsx
 #: src/modules/settings/admin-panel/health-status/components/SettingsAdminJsonDataIndicatorHealthStatus.tsx
 #: src/modules/settings/admin-panel/health-status/components/SettingsAdminJobDetailsExpandable.tsx
 #: src/modules/settings/admin-panel/health-status/components/SettingsAdminJobDetailsExpandable.tsx
@@ -3835,6 +3810,11 @@ msgstr "날짜, 시간, 숫자, 시간대 및 캘린더 시작일 구성"
 #: src/modules/settings/security/components/SettingsSecuritySettings.tsx
 msgid "Configure fallback login methods for users with SSO bypass permissions"
 msgstr "SSO 우회 권한이 있는 사용자를 위한 대체 로그인 방법 구성"
+
+#. js-lingui-id: zXzR4W
+#: src/modules/settings/security/components/SettingsSecuritySettings.tsx
+msgid "Configure how long audit logs are retained"
+msgstr ""
 
 #. js-lingui-id: OLqG0t
 #: src/modules/settings/data-model/object-details/components/tabs/ObjectSettings.tsx
@@ -5573,11 +5553,11 @@ msgid "Detail per workspace"
 msgstr ""
 
 #. js-lingui-id: URmyfc
-#: src/pages/settings/security/event-logs/utils/getColumnsForEventLogTable.ts
 #: src/pages/settings/layout/components/SettingsLayoutDetailScaffold.tsx
 #: src/pages/settings/applications/SettingsApplicationConnectionDetail.tsx
 #: src/pages/settings/applications/tabs/SettingsApplicationFrontComponentSettingsTab.tsx
 #: src/pages/settings/applications/tabs/SettingsApplicationCommandMenuItemSettingsTab.tsx
+#: src/modules/settings/event-logs/utils/getColumnsForEventLogTable.tsx
 #: src/modules/ai/components/RoutingDebugDisplay.tsx
 msgid "Details"
 msgstr "세부정보"
@@ -6262,12 +6242,12 @@ msgid "Empty"
 msgstr "비어 있음"
 
 #. js-lingui-id: OMbipf
-#: src/pages/settings/security/event-logs/components/EventLogJsonCell.tsx
 #: src/modules/workflow/workflow-steps/components/WorkflowRunStepOutputDetail.tsx
 #: src/modules/workflow/workflow-steps/components/WorkflowRunStepInputDetail.tsx
 #: src/modules/workflow/workflow-run/observability/WorkflowRunStepLogsToolCallRow.tsx
 #: src/modules/workflow/workflow-run/observability/WorkflowRunStepLogsDetail.tsx
 #: src/modules/workflow/workflow-run/observability/WorkflowRunStepLogsDetail.tsx
+#: src/modules/settings/event-logs/components/EventLogJsonCell.tsx
 #: src/modules/settings/admin-panel/health-status/components/SettingsAdminJsonDataIndicatorHealthStatus.tsx
 #: src/modules/settings/admin-panel/health-status/components/SettingsAdminJobDetailsExpandable.tsx
 #: src/modules/settings/admin-panel/health-status/components/SettingsAdminJobDetailsExpandable.tsx
@@ -6286,12 +6266,12 @@ msgid "Empty Inbox"
 msgstr "받은 편지함 비우기"
 
 #. js-lingui-id: 3hSGoJ
-#: src/pages/settings/security/event-logs/components/EventLogJsonCell.tsx
 #: src/modules/workflow/workflow-steps/components/WorkflowRunStepOutputDetail.tsx
 #: src/modules/workflow/workflow-steps/components/WorkflowRunStepInputDetail.tsx
 #: src/modules/workflow/workflow-run/observability/WorkflowRunStepLogsToolCallRow.tsx
 #: src/modules/workflow/workflow-run/observability/WorkflowRunStepLogsDetail.tsx
 #: src/modules/workflow/workflow-run/observability/WorkflowRunStepLogsDetail.tsx
+#: src/modules/settings/event-logs/components/EventLogJsonCell.tsx
 #: src/modules/settings/admin-panel/health-status/components/SettingsAdminJsonDataIndicatorHealthStatus.tsx
 #: src/modules/settings/admin-panel/health-status/components/SettingsAdminJobDetailsExpandable.tsx
 #: src/modules/settings/admin-panel/health-status/components/SettingsAdminJobDetailsExpandable.tsx
@@ -6321,14 +6301,10 @@ msgid "Enable model-specific features"
 msgstr "모델별 기능 활성화"
 
 #. js-lingui-id: IrI9pg
+#: src/modules/settings/event-logs/components/EventLogFilters.tsx
 #: src/modules/settings/admin-panel/health-status/maintenance-mode/components/SettingsAdminMaintenanceMode.tsx
 msgid "End date"
 msgstr ""
-
-#. js-lingui-id: VFv2ZC
-#: src/pages/settings/security/event-logs/components/EventLogFilters.tsx
-msgid "End Date"
-msgstr "종료 날짜"
 
 #. js-lingui-id: Fqu/aC
 #: src/modules/settings/admin-panel/health-status/maintenance-mode/components/SettingsAdminMaintenanceMode.tsx
@@ -6596,11 +6572,6 @@ msgstr "엔터프라이즈"
 msgid "Enterprise feature"
 msgstr ""
 
-#. js-lingui-id: Kjjkt3
-#: src/pages/settings/security/event-logs/SettingsEventLogs.tsx
-msgid "Enterprise Feature"
-msgstr "Enterprise 기능"
-
 #. js-lingui-id: S5c4pl
 #: src/pages/settings/enterprise/SettingsEnterprise.tsx
 #: src/pages/settings/enterprise/SettingsEnterprise.tsx
@@ -6660,6 +6631,7 @@ msgstr "소프트 삭제된 기록 지우기"
 #: src/modules/workflow/workflow-run/observability/WorkflowRunStepLogsCodeDetail.tsx
 #: src/modules/workflow/workflow-run/observability/WorkflowRunStepLogsCodeDetail.tsx
 #: src/modules/ui/feedback/snack-bar-manager/components/SnackBar.tsx
+#: src/modules/page-layout/widgets/components/PageLayoutWidgetErrorDisplay.tsx
 msgid "Error"
 msgstr "오류"
 
@@ -6697,11 +6669,6 @@ msgstr "SSO ID 공급자 편집 오류"
 #: src/modules/error-handler/components/AppRootErrorFallback.tsx
 msgid "Error illustration"
 msgstr "오류 일러스트레이션"
-
-#. js-lingui-id: UJr0dl
-#: src/pages/settings/security/event-logs/SettingsEventLogs.tsx
-msgid "Error Loading Audit Logs"
-msgstr "감사 로그 로드 오류"
 
 #. js-lingui-id: 9e/9KK
 #: src/modules/activities/timeline-activities/rows/calendar/components/EventCardCalendarEvent.tsx
@@ -6845,16 +6812,15 @@ msgid "Evaluations"
 msgstr ""
 
 #. js-lingui-id: 0pC/y6
-#: src/pages/settings/security/event-logs/utils/getColumnsForEventLogTable.ts
-#: src/pages/settings/security/event-logs/utils/getColumnsForEventLogTable.ts
+#: src/modules/settings/event-logs/utils/getColumnsForEventLogTable.tsx
 #: src/modules/activities/calendar/components/CalendarEventDetails.tsx
 msgid "Event"
 msgstr "이벤트"
 
-#. js-lingui-id: ailPEn
-#: src/pages/settings/security/event-logs/components/EventLogFilters.tsx
-msgid "Event Type"
-msgstr "이벤트 유형"
+#. js-lingui-id: cW8SdW
+#: src/modules/settings/event-logs/components/EventLogFilters.tsx
+msgid "Event type"
+msgstr ""
 
 #. js-lingui-id: poC90w
 #: src/modules/settings/accounts/components/SettingsAccountsCalendarChannelDetails.tsx
@@ -6971,7 +6937,7 @@ msgid "Exclude the following people and domains from my email sync. Internal con
 msgstr "다음 사람들과 도메인을 이메일 동기화에서 제외합니다. 내부 대화는 가져오지 않습니다"
 
 #. js-lingui-id: B0clc7
-#: src/pages/settings/security/event-logs/utils/getColumnsForEventLogTable.ts
+#: src/modules/settings/event-logs/utils/getColumnsForEventLogTable.tsx
 msgid "Execution ID"
 msgstr ""
 
@@ -7001,12 +6967,12 @@ msgid "Exit Settings"
 msgstr "설정 종료"
 
 #. js-lingui-id: 1A3EXy
-#: src/pages/settings/security/event-logs/components/EventLogJsonCell.tsx
 #: src/modules/workflow/workflow-steps/components/WorkflowRunStepOutputDetail.tsx
 #: src/modules/workflow/workflow-steps/components/WorkflowRunStepInputDetail.tsx
 #: src/modules/workflow/workflow-run/observability/WorkflowRunStepLogsToolCallRow.tsx
 #: src/modules/workflow/workflow-run/observability/WorkflowRunStepLogsDetail.tsx
 #: src/modules/workflow/workflow-run/observability/WorkflowRunStepLogsDetail.tsx
+#: src/modules/settings/event-logs/components/EventLogJsonCell.tsx
 #: src/modules/settings/admin-panel/health-status/components/SettingsAdminJsonDataIndicatorHealthStatus.tsx
 #: src/modules/settings/admin-panel/health-status/components/SettingsAdminJobDetailsExpandable.tsx
 #: src/modules/settings/admin-panel/health-status/components/SettingsAdminJobDetailsExpandable.tsx
@@ -7620,7 +7586,7 @@ msgid "Filter"
 msgstr "필터"
 
 #. js-lingui-id: LjNPDA
-#: src/pages/settings/security/event-logs/components/EventLogFilters.tsx
+#: src/modules/settings/event-logs/components/EventLogFilters.tsx
 msgid "Filter by event"
 msgstr "이벤트로 필터링"
 
@@ -7630,7 +7596,7 @@ msgid "Filter by object type"
 msgstr ""
 
 #. js-lingui-id: gVEHcL
-#: src/pages/settings/security/event-logs/components/EventLogFilters.tsx
+#: src/modules/settings/event-logs/components/EventLogFilters.tsx
 msgid "Filter by record ID"
 msgstr "레코드 ID로 필터링"
 
@@ -7877,7 +7843,7 @@ msgid "Full tab widget"
 msgstr ""
 
 #. js-lingui-id: YMZBxa
-#: src/pages/settings/security/event-logs/utils/getColumnsForEventLogTable.ts
+#: src/modules/settings/event-logs/utils/getColumnsForEventLogTable.tsx
 msgid "Function"
 msgstr ""
 
@@ -7972,11 +7938,6 @@ msgstr ""
 #: src/modules/settings/data-model/object-details/components/tabs/SettingsObjectSearchSection.tsx
 msgid "Global search"
 msgstr ""
-
-#. js-lingui-id: sr0UJD
-#: src/pages/settings/security/event-logs/SettingsEventLogs.tsx
-msgid "Go Back"
-msgstr "뒤로 가기"
 
 #. js-lingui-id: Hb4Cgz
 #: src/pages/settings/enterprise/SettingsEnterprise.tsx
@@ -8825,10 +8786,10 @@ msgstr "잘못된 인증 제공자"
 msgid "Invalid Configuration"
 msgstr "잘못된 설정입니다"
 
-#. js-lingui-id: fSwqXe
+#. js-lingui-id: SEpkD6
 #: src/modules/page-layout/widgets/components/PageLayoutWidgetInvalidConfigDisplay.tsx
-msgid "Invalid configuration. Click edit to configure this widget."
-msgstr "잘못된 설정입니다. 이 위젯을 설정하려면 편집을 클릭하세요."
+msgid "Invalid configuration: {errorMessage}"
+msgstr ""
 
 #. js-lingui-id: ER/0YT
 #: src/modules/workflow/workflow-trigger/utils/getTriggerScheduleDescription.ts
@@ -9526,7 +9487,7 @@ msgid "Less than or equal"
 msgstr "이하"
 
 #. js-lingui-id: oCHfGC
-#: src/pages/settings/security/event-logs/utils/getColumnsForEventLogTable.ts
+#: src/modules/settings/event-logs/utils/getColumnsForEventLogTable.tsx
 msgid "Level"
 msgstr ""
 
@@ -9701,8 +9662,8 @@ msgid "Loading metrics data..."
 msgstr "메트릭스 데이터 로딩 중..."
 
 #. js-lingui-id: tVSmFT
-#: src/pages/settings/security/event-logs/components/EventLogResultsTable.tsx
 #: src/modules/ui/input/components/IconPicker.tsx
+#: src/modules/settings/event-logs/components/EventLogResultsTable.tsx
 #: src/modules/object-record/record-picker/multiple-record-picker/components/MultipleRecordPickerFetchMoreLoader.tsx
 #: src/modules/activities/components/CustomResolverFetchMoreLoader.tsx
 msgid "Loading more..."
@@ -9795,12 +9756,18 @@ msgid "Logout"
 msgstr "로그아웃"
 
 #. js-lingui-id: w/bY7R
+#: src/pages/settings/general/SettingsGeneral.tsx
 #: src/pages/settings/ai/SettingsAgentForm.tsx
 #: src/modules/side-panel/pages/workflow/step/view-run/components/SidePanelWorkflowRunViewStepContent.tsx
 #: src/modules/settings/admin-panel/health-status/components/SettingsAdminJobDetailsExpandable.tsx
 #: src/modules/logic-functions/components/LogicFunctionLogs.tsx
 msgid "Logs"
 msgstr "로그"
+
+#. js-lingui-id: MspNoT
+#: src/modules/settings/event-logs/components/SettingsLogs.tsx
+msgid "Logs require ClickHouse to be configured. Please contact your administrator."
+msgstr ""
 
 #. js-lingui-id: FJBbw5
 #: src/modules/object-metadata/hooks/useSortSubFieldChoicesForField.ts
@@ -10011,14 +9978,8 @@ msgstr ""
 msgid "MCP config copied to clipboard"
 msgstr ""
 
-#. js-lingui-id: NvQoNb
-#: src/pages/settings/ai/components/SettingsAiMCP.tsx
-msgid "MCP Configuration copied to clipboard"
-msgstr "MCP 구성 복사됨"
-
 #. js-lingui-id: 8CWirf
 #: src/pages/settings/ai/components/SettingsAiOverviewTab.tsx
-#: src/pages/settings/ai/components/SettingsAiMCP.tsx
 msgid "MCP Server"
 msgstr "MCP 서버"
 
@@ -10092,7 +10053,7 @@ msgid "Merging..."
 msgstr "병합 중..."
 
 #. js-lingui-id: xDAtGP
-#: src/pages/settings/security/event-logs/utils/getColumnsForEventLogTable.ts
+#: src/modules/settings/event-logs/utils/getColumnsForEventLogTable.tsx
 msgid "Message"
 msgstr ""
 
@@ -11016,7 +10977,7 @@ msgid "No evaluations yet for this turn"
 msgstr ""
 
 #. js-lingui-id: SIR5Ix
-#: src/pages/settings/security/event-logs/components/EventLogResultsTable.tsx
+#: src/modules/settings/event-logs/components/EventLogResultsTable.tsx
 msgid "No event logs found"
 msgstr "이벤트 로그를 찾을 수 없습니다"
 
@@ -11041,7 +11002,7 @@ msgid "No field configured"
 msgstr "설정된 필드가 없습니다"
 
 #. js-lingui-id: /hvarH
-#: src/modules/side-panel/pages/page-layout/components/dropdown-content/ChartGroupByFieldSelectionRelationFieldView.tsx
+#: src/modules/side-panel/pages/page-layout/components/dropdown-content/ChartGroupByFieldSelectionTargetObjectFieldsView.tsx
 msgid "No fields available"
 msgstr ""
 
@@ -11311,6 +11272,11 @@ msgstr "사용 가능한 시스템 개체가 없습니다"
 msgid "No system objects with views found"
 msgstr "보기가 있는 시스템 개체를 찾을 수 없습니다"
 
+#. js-lingui-id: L4Miic
+#: src/modules/side-panel/pages/page-layout/components/dropdown-content/ChartGroupByFieldSelectionMorphRelationFieldView.tsx
+msgid "No targets available"
+msgstr ""
+
 #. js-lingui-id: t0t36i
 #: src/modules/workflow/workflow-run/observability/WorkflowRunStepLogsAiAgentDetail.tsx
 msgid "No tools were called"
@@ -11555,7 +11521,6 @@ msgstr ""
 #. js-lingui-id: b/j06W
 #: src/pages/settings/applications/SettingsApplicationRegistrationDetails.tsx
 #: src/pages/settings/applications/tabs/SettingsApplicationRegistrationOAuthTab.tsx
-#: src/pages/settings/ai/components/SettingsAiMCP.tsx
 #: src/pages/settings/admin-panel/SettingsAdminApplicationRegistrationDetail.tsx
 msgid "OAuth"
 msgstr "OAuth"
@@ -11607,12 +11572,12 @@ msgid "Object destination"
 msgstr "개체 대상"
 
 #. js-lingui-id: /clmEa
-#: src/pages/settings/security/event-logs/components/EventLogTableSelector.tsx
+#: src/modules/settings/event-logs/components/EventLogTableSelector.tsx
 msgid "Object Events"
 msgstr "객체 이벤트"
 
 #. js-lingui-id: 79D4Az
-#: src/pages/settings/security/event-logs/utils/getColumnsForEventLogTable.ts
+#: src/modules/settings/event-logs/utils/getColumnsForEventLogTable.tsx
 msgid "Object ID"
 msgstr "객체 ID"
 
@@ -11631,10 +11596,10 @@ msgstr "객체 권한"
 msgid "Object permission options"
 msgstr "객체 권한 옵션"
 
-#. js-lingui-id: UGhVPl
-#: src/pages/settings/security/event-logs/components/EventLogFilters.tsx
-msgid "Object Type"
-msgstr "객체 유형"
+#. js-lingui-id: gaqIMK
+#: src/modules/settings/event-logs/components/EventLogFilters.tsx
+msgid "Object type"
+msgstr ""
 
 #. js-lingui-id: rDycBw
 #: src/modules/workflow/workflow-steps/workflow-actions/components/WorkflowEditActionUpsertRecord.tsx
@@ -11767,6 +11732,11 @@ msgstr "이 트리거는 어떤 개체에서 사용할 수 있습니까?"
 #: src/modules/settings/accounts/components/SettingsAccountsCalendarChannelsGeneral.tsx
 msgid "Onboarding call"
 msgstr "온보딩 전화"
+
+#. js-lingui-id: oFTo3P
+#: src/modules/settings/event-logs/components/SettingsLogs.tsx
+msgid "Only application logs are available on your current plan. Other log types require an Enterprise subscription."
+msgstr ""
 
 #. js-lingui-id: zii2Qj
 #: src/modules/settings/accounts/components/SettingsAccountsCalendarVisibilitySettingsCard.tsx
@@ -12107,10 +12077,10 @@ msgstr "페이지 레이아웃 위젯"
 msgid "Page layouts"
 msgstr ""
 
-#. js-lingui-id: IVBjIH
-#: src/pages/settings/security/event-logs/components/EventLogFilters.tsx
-msgid "Page Name"
-msgstr "페이지 이름"
+#. js-lingui-id: zQF6Kb
+#: src/modules/settings/event-logs/components/EventLogFilters.tsx
+msgid "Page name"
+msgstr ""
 
 #. js-lingui-id: NRvxzv
 #: src/pages/not-found/NotFound.tsx
@@ -12118,7 +12088,7 @@ msgid "Page Not Found | Twenty"
 msgstr "페이지를 찾을 수 없음 | Twenty"
 
 #. js-lingui-id: sF+Xp9
-#: src/pages/settings/security/event-logs/components/EventLogTableSelector.tsx
+#: src/modules/settings/event-logs/components/EventLogTableSelector.tsx
 msgid "Page Views"
 msgstr "페이지 조회수"
 
@@ -12196,6 +12166,11 @@ msgstr "여기에 엔터프라이즈 키를 붙여넣으세요"
 msgid "Path"
 msgstr "경로"
 
+#. js-lingui-id: IgrLD/
+#: src/modules/settings/event-logs/components/SettingsLogs.tsx
+msgid "Pause"
+msgstr ""
+
 #. js-lingui-id: QmXBEc
 #: src/pages/settings/enterprise/SettingsEnterprise.tsx
 msgid "Payment issue"
@@ -12260,6 +12235,11 @@ msgstr "백분율"
 #. js-lingui-id: /YAKmj
 #: src/modules/settings/members/components/MemberInfosTab.tsx
 msgid "Perform administrative actions or permanently delete this user"
+msgstr ""
+
+#. js-lingui-id: NtQvjo
+#: src/modules/settings/event-logs/components/EventLogFilters.tsx
+msgid "Period"
 msgstr ""
 
 #. js-lingui-id: wSpwGR
@@ -12658,8 +12638,7 @@ msgid "Prompt"
 msgstr ""
 
 #. js-lingui-id: l/UFPv
-#: src/pages/settings/security/event-logs/utils/getColumnsForEventLogTable.ts
-#: src/pages/settings/security/event-logs/utils/getColumnsForEventLogTable.ts
+#: src/modules/settings/event-logs/utils/getColumnsForEventLogTable.tsx
 msgid "Properties"
 msgstr "속성"
 
@@ -12974,8 +12953,8 @@ msgid "Record filter rule options"
 msgstr "레코드 필터 규칙 옵션"
 
 #. js-lingui-id: xSAYIn
-#: src/pages/settings/security/event-logs/utils/getColumnsForEventLogTable.ts
-#: src/pages/settings/security/event-logs/components/EventLogFilters.tsx
+#: src/modules/settings/event-logs/utils/getColumnsForEventLogTable.tsx
+#: src/modules/settings/event-logs/components/EventLogFilters.tsx
 msgid "Record ID"
 msgstr "레코드 ID"
 
@@ -13053,11 +13032,6 @@ msgstr "리디렉션 URL이 클립보드에 복사되었습니다"
 #: src/modules/settings/security/components/SSO/SettingsSSOOIDCForm.tsx
 msgid "Redirection URI"
 msgstr "리디렉션 URI"
-
-#. js-lingui-id: lCF0wC
-#: src/pages/settings/security/event-logs/SettingsEventLogs.tsx
-msgid "Refresh"
-msgstr "새로 고침"
 
 #. js-lingui-id: pTGa/J
 #: src/pages/settings/admin-panel/SettingsAdminWorkspacesStatus.tsx
@@ -13417,7 +13391,7 @@ msgid "Resource credits updated."
 msgstr ""
 
 #. js-lingui-id: esl+Tv
-#: src/pages/settings/security/event-logs/utils/getColumnsForEventLogTable.ts
+#: src/modules/settings/event-logs/utils/getColumnsForEventLogTable.tsx
 msgid "Resource Type"
 msgstr "리소스 유형"
 
@@ -13489,6 +13463,7 @@ msgstr "결과"
 
 #. js-lingui-id: v39wLo
 #: src/modules/workflow/workflow-steps/workflow-actions/delay-actions/components/WorkflowEditActionDelay.tsx
+#: src/modules/settings/event-logs/components/SettingsLogs.tsx
 msgid "Resume"
 msgstr "다시 시작"
 
@@ -13952,7 +13927,7 @@ msgstr "통화 검색"
 #: src/modules/views/components/ViewBarFilterDropdownFieldSelectMenu.tsx
 #: src/modules/spreadsheet-import/components/MatchColumnSelectFieldSelectDropdownContent.tsx
 #: src/modules/side-panel/pages/page-layout/components/dropdown-content/FieldWidgetFieldDropdownContent.tsx
-#: src/modules/side-panel/pages/page-layout/components/dropdown-content/ChartGroupByFieldSelectionRelationFieldView.tsx
+#: src/modules/side-panel/pages/page-layout/components/dropdown-content/ChartGroupByFieldSelectionTargetObjectFieldsView.tsx
 #: src/modules/side-panel/pages/page-layout/components/dropdown-content/ChartGroupByFieldSelectionDropdownContentBase.tsx
 #: src/modules/side-panel/pages/page-layout/components/dropdown-content/ChartFieldSelectionForAggregateOperationDropdownContent.tsx
 #: src/modules/object-record/record-table/record-table-header/components/RecordTableHeaderPlusButtonContent.tsx
@@ -14092,7 +14067,6 @@ msgstr "비밀 액세스 키"
 
 #. js-lingui-id: a3LDKx
 #: src/pages/settings/security/SettingsSecuritySSOIdentifyProvider.tsx
-#: src/pages/settings/security/event-logs/SettingsEventLogs.tsx
 #: src/pages/settings/general/SettingsGeneral.tsx
 #: src/modules/settings/roles/role-permissions/permission-flags/hooks/useSettingsRolePermissionFlagConfig.ts
 msgid "Security"
@@ -14897,6 +14871,11 @@ msgstr ""
 msgid "Something went wrong"
 msgstr "문제가 발생했습니다"
 
+#. js-lingui-id: teokEm
+#: src/modules/settings/event-logs/components/SettingsLogs.tsx
+msgid "Something went wrong while loading logs. Please try again."
+msgstr ""
+
 #. js-lingui-id: yHwG3y
 #: src/modules/ui/navigation/navigation-drawer/components/NavigationDrawerItem.tsx
 #: src/modules/settings/components/SettingsCard.tsx
@@ -15052,14 +15031,10 @@ msgid "Start a new enterprise subscription."
 msgstr "새 엔터프라이즈 구독을 시작하세요."
 
 #. js-lingui-id: WAjFYI
+#: src/modules/settings/event-logs/components/EventLogFilters.tsx
 #: src/modules/settings/admin-panel/health-status/maintenance-mode/components/SettingsAdminMaintenanceMode.tsx
 msgid "Start date"
 msgstr ""
-
-#. js-lingui-id: D3iCkb
-#: src/pages/settings/security/event-logs/components/EventLogFilters.tsx
-msgid "Start Date"
-msgstr "시작 날짜"
 
 #. js-lingui-id: s+K73L
 #: src/modules/settings/billing/components/SettingsBillingSubscriptionInfo.tsx
@@ -15494,12 +15469,12 @@ msgid "Tab Settings"
 msgstr "탭 설정"
 
 #. js-lingui-id: 4hJhzz
-#: src/pages/settings/security/event-logs/components/EventLogTableSelector.tsx
 #: src/pages/settings/layout/SettingsLayoutViewDetail.tsx
 #: src/modules/views/view-picker/constants/ViewPickerTypeSelectOptions.ts
 #: src/modules/side-panel/pages/page-layout/components/record-page/SidePanelRecordPageFieldSettings.tsx
 #: src/modules/side-panel/pages/page-layout/components/dropdown-content/FieldWidgetLayoutDropdownContent.tsx
 #: src/modules/side-panel/pages/page-layout/components/dashboard/SidePanelDashboardRecordTableSettings.tsx
+#: src/modules/settings/event-logs/components/EventLogTableSelector.tsx
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownLayoutContent.tsx
 #: src/modules/keyboard-shortcut-menu/components/KeyboardShortcutMenuOpenContent.tsx
 msgid "Table"
@@ -15976,6 +15951,11 @@ msgstr "이 역할은 이 {roleTargetDisplayName}들에게 할당되었습니다
 msgid "This role is shared with other users or agents and cannot be edited here."
 msgstr ""
 
+#. js-lingui-id: w8O8Ja
+#: src/modules/side-panel/pages/page-layout/components/ChartFiltersDeletedFieldsWarning.tsx
+msgid "This rule filters on one or more deleted fields that should be removed."
+msgstr ""
+
 #. js-lingui-id: C/wr0z
 #: src/modules/settings/admin-panel/config-variables/components/ConfigVariableHelpText.tsx
 msgid "This setting can only be configured through environment variables."
@@ -16105,10 +16085,7 @@ msgid "Timeout"
 msgstr "시간 제한"
 
 #. js-lingui-id: 8TMaZI
-#: src/pages/settings/security/event-logs/utils/getColumnsForEventLogTable.ts
-#: src/pages/settings/security/event-logs/utils/getColumnsForEventLogTable.ts
-#: src/pages/settings/security/event-logs/utils/getColumnsForEventLogTable.ts
-#: src/pages/settings/security/event-logs/utils/getColumnsForEventLogTable.ts
+#: src/modules/settings/event-logs/utils/getColumnsForEventLogTable.tsx
 #: src/modules/settings/admin-panel/health-status/components/SettingsAdminQueueJobsTable.tsx
 msgid "Timestamp"
 msgstr "타임스탬프"
@@ -16864,6 +16841,7 @@ msgstr "업데이트됨 (특정 필드 변경 시)"
 
 #. js-lingui-id: kwkhPe
 #: src/modules/settings/roles/role-permissions/object-level-permissions/record-level-permissions/components/SettingsRolePermissionsObjectLevelRecordLevelSection.tsx
+#: src/modules/settings/event-logs/components/SettingsLogs.tsx
 #: src/modules/settings/billing/components/internal/ResourceCreditPriceSelector.tsx
 #: src/modules/settings/billing/components/internal/ResourceCreditPriceSelector.tsx
 #: src/modules/ai/components/AIChatNoMoreBillingCreditsBanner.tsx
@@ -16919,6 +16897,11 @@ msgstr ""
 #: src/modules/settings/roles/role-permissions/object-level-permissions/record-level-permissions/components/SettingsRolePermissionsObjectLevelRecordLevelSection.tsx
 msgid "Upgrade to access"
 msgstr "접근하려면 업그레이드하세요."
+
+#. js-lingui-id: bihQKI
+#: src/modules/settings/event-logs/components/SettingsLogs.tsx
+msgid "Upgrade to access audit logs"
+msgstr ""
 
 #. js-lingui-id: Wurpq2
 #: src/modules/settings/security/components/SettingsSecuritySettings.tsx
@@ -17054,7 +17037,7 @@ msgid "Usage by User"
 msgstr "사용자별 사용량"
 
 #. js-lingui-id: CedRjP
-#: src/pages/settings/security/event-logs/components/EventLogTableSelector.tsx
+#: src/modules/settings/event-logs/components/EventLogTableSelector.tsx
 msgid "Usage Events"
 msgstr "사용 이벤트"
 
@@ -17109,9 +17092,6 @@ msgid "Useful for pivot/junction tables"
 msgstr "피벗/정션 테이블에 유용합니다"
 
 #. js-lingui-id: 7PzzBU
-#: src/pages/settings/security/event-logs/utils/getColumnsForEventLogTable.ts
-#: src/pages/settings/security/event-logs/utils/getColumnsForEventLogTable.ts
-#: src/pages/settings/security/event-logs/utils/getColumnsForEventLogTable.ts
 #: src/pages/settings/profile/SettingsTwoFactorAuthenticationMethod.tsx
 #: src/pages/settings/profile/SettingsProfile.tsx
 #: src/pages/settings/profile/appearance/components/SettingsExperience.tsx
@@ -17124,6 +17104,7 @@ msgstr "피벗/정션 테이블에 유용합니다"
 #: src/pages/settings/accounts/SettingsAccountsCalendars.tsx
 #: src/pages/settings/accounts/SettingsAccounts.tsx
 #: src/modules/settings/hooks/useSettingsNavigationItems.tsx
+#: src/modules/settings/event-logs/utils/getColumnsForEventLogTable.tsx
 #: src/modules/settings/accounts/components/SettingsAccountsNewImapSmtpCaldavConnection.tsx
 #: src/modules/settings/accounts/components/SettingsAccountsEditImapSmtpCaldavConnection.tsx
 msgid "User"
@@ -17327,11 +17308,6 @@ msgstr ""
 msgid "View all evaluations"
 msgstr ""
 
-#. js-lingui-id: XVf/G7
-#: src/modules/settings/security/components/SettingsSecuritySettings.tsx
-msgid "View and filter events, page views, object changes"
-msgstr "이벤트, 페이지 조회수, 객체 변경 사항 보기 및 필터링"
-
 #. js-lingui-id: KANz0G
 #: src/pages/settings/enterprise/SettingsEnterprise.tsx
 #: src/pages/settings/enterprise/SettingsEnterprise.tsx
@@ -17389,11 +17365,6 @@ msgstr "청구서 보기"
 msgid "View Jobs"
 msgstr "작업 보기"
 
-#. js-lingui-id: 923YyC
-#: src/modules/settings/security/components/SettingsSecuritySettings.tsx
-msgid "View Logs"
-msgstr "로그 보기"
-
 #. js-lingui-id: sAPirx
 #: src/modules/object-record/record-index/components/RecordIndexEmptyStateNotShared.tsx
 msgid "View not shared"
@@ -17428,11 +17399,6 @@ msgstr "보기 유형"
 #: src/modules/settings/billing/components/SettingsBillingCreditsSection.tsx
 msgid "View usage"
 msgstr "사용량 보기"
-
-#. js-lingui-id: rWiqJF
-#: src/modules/settings/security/components/SettingsSecuritySettings.tsx
-msgid "View workspace activity logs"
-msgstr "워크스페이스 활동 로그 보기"
 
 #. js-lingui-id: 1I6UoR
 #: src/pages/settings/layout/SettingsLayoutViewDetail.tsx
@@ -17841,7 +17807,6 @@ msgstr "Workflows"
 #. js-lingui-id: pmUArF
 #: src/pages/settings/security/SettingsSecuritySSOIdentifyProvider.tsx
 #: src/pages/settings/security/SettingsSecurityApprovedAccessDomain.tsx
-#: src/pages/settings/security/event-logs/SettingsEventLogs.tsx
 #: src/pages/settings/members/SettingsWorkspaceMembers.tsx
 #: src/pages/settings/members/SettingsWorkspaceMember.tsx
 #: src/pages/settings/members/roles/SettingsRoleAddObjectLevel.tsx
@@ -17933,8 +17898,7 @@ msgid "Workspace Domain"
 msgstr "워크스페이스 도메인"
 
 #. js-lingui-id: J2q6WC
-#: src/pages/settings/security/event-logs/components/EventLogTableSelector.tsx
-#: src/modules/settings/security/components/SettingsSecuritySettings.tsx
+#: src/modules/settings/event-logs/components/EventLogTableSelector.tsx
 msgid "Workspace Events"
 msgstr "워크스페이스 이벤트"
 
@@ -17959,13 +17923,9 @@ msgstr ""
 msgid "Workspace logo"
 msgstr "워크스페이스 로고"
 
-#. js-lingui-id: qc38qR
-#: src/pages/settings/security/event-logs/components/EventLogFilters.tsx
-msgid "Workspace Member"
-msgstr "워크스페이스 멤버"
-
 #. js-lingui-id: wtxjAY
 #: src/pages/settings/admin-panel/SettingsAdminWorkspaceDetail.tsx
+#: src/modules/settings/event-logs/components/EventLogFilters.tsx
 msgid "Workspace members"
 msgstr ""
 
